@@ -3,7 +3,7 @@ name: WindowsBuildWithRobloxFileFormat
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
