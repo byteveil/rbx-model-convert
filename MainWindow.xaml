@@ -15,12 +15,15 @@
         <TextBlock Text="Thank you for using my conversion tool!"
                    Margin="10" FontSize="16" FontWeight="Bold"/>
 
-        <Label Content="Selected File Path:" Grid.Row="1"/>
-        <TextBox x:Name="FilePathTextBox" Margin="10" Grid.Row="2" IsReadOnly="True"/>
+        <!-- Add a TextBox to display the selected file path -->
+        <TextBox x:Name="FilePathTextBox" Margin="10" Grid.Row="1" IsReadOnly="True"/>
 
-        <Button Content="Convert" Click="ConvertButton_Click" Width="100" Height="30" Margin="10" Grid.Row="3"/>
+        <!-- Add a Button to open the file dialog -->
+        <Button Content="Browse" Click="BrowseButton_Click" Width="100" Height="30" Margin="10" Grid.Row="1" HorizontalAlignment="Right"/>
 
-        <TextBlock x:Name="ResultTextBlock" Margin="10" Grid.Row="4"/>
+        <Button Content="Convert" Click="ConvertButton_Click" Width="100" Height="30" Margin="10" Grid.Row="2"/>
+
+        <!-- Add a TextBlock to display processing or conversion messages -->
+        <TextBlock x:Name="ResultTextBlock" Margin="10" Grid.Row="3"/>
     </Grid>
-
 </Window>

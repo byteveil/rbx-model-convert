@@ -39,5 +39,5 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: WindowsBuildArtifacts
-        path: WindowsBuildArtifacts.zip
+        name: WorkflowArtifactsResult
+        path: WorkflowArtifactsResult.zip
