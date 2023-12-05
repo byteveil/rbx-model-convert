@@ -32,12 +32,9 @@ jobs:
     - name: 🚀 Publish
       run: dotnet publish --configuration Release --output publish
 
-    - name: 📦 Zip artifacts
-      run: Compress-Archive -Path publish -DestinationPath WindowsBuildArtifacts.zip
-      if: success()
-
     - name: 📤 Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: WorkflowArtifactsResult
-        path: WindowsBuildArtifacts.zip
+        path: |
+          publish/*
