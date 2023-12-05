@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace rbxml_convert
+namespace RbxModelConvert
 {
     /// <summary>
     /// Interaction logic for App.xaml

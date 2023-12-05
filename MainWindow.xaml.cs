@@ -3,7 +3,7 @@ using System.Windows;
 using Microsoft.Win32;
 using RobloxFiles;
 
-namespace rbxml_convert
+namespace RbxModelConvert
 {
     public partial class MainWindow : Window
     {
